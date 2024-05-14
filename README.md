@@ -4,7 +4,10 @@ generate kubernetes resource PATCH
 
 ## Install
 
+```shell
 go install github.com/lyp256/patchgen # go version 1.16+
+
+```
 
 ## Usage
 
