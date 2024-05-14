@@ -31,12 +31,12 @@ func main() {
 	if len(pflag.Args()) != 2 {
 		usage()
 	}
-	raw, err := getObject("raw.json")
+	raw, err := getObject(pflag.Arg(0))
 	if err != nil {
 		panic(err)
 		return
 	}
-	update, err := getObject("new.json")
+	update, err := getObject(pflag.Arg(1))
 	if err != nil {
 		panic(err)
 		return
